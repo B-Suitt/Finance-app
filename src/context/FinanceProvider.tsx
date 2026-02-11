@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { FinanceContext } from './FinanceContext'
-import type { Transaction } from '../types/finance'
+import type { Transaction, NewTransaction } from '../types/finance'
 
 const getInitialTransactions = (): Transaction[] => {
   const stored = localStorage.getItem('transactions')
@@ -15,10 +15,14 @@ const FinanceProvider = ({ children }: { children: React.ReactNode }) => {
     localStorage.setItem('transactions', JSON.stringify(transactions))
   }, [transactions])
 
-  const addTransaction = (transaction: Transaction) => {
-    setTransactions(prev => [...prev, transaction])
-  }
+  const addTransaction = (transaction: NewTransaction) => {
+    const newTransaction: Transaction = {
+      ...transaction,
+      id: crypto.randomUUID(),
+    }
 
+    setTransactions(prev => [...prev, newTransaction])
+  }
   const removeTransaction = (id: string) => {
     setTransactions(prev => prev.filter(t => t.id !== id))
   }

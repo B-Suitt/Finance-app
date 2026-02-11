@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Select, TextInput, } from "flowbite-react"
 import { useFinance } from '../../context/useFinance'
 import type { TransactionType } from '../../types/finance'
 
@@ -14,6 +15,9 @@ const TransactionForm = () => {
   amount?: string
   type?: string
   }>({})
+
+
+
 
   const validate = () => {
   const newErrors: typeof errors = {}
@@ -52,42 +56,43 @@ const TransactionForm = () => {
   return (
      <form
       onSubmit={handleSubmit}
-      className="space-y-4 rounded-xl bg-white p-4 shadow"
+      className="space-y-4 rounded-xl bg-gray-900 border border-gray-700 text-white p-4 shadow"
     >
       <h2 className="text-lg font-semibold">Nueva transacción</h2>
 
-      <input
+      <TextInput
         type="text"
         placeholder="Descripción"
         value={description}
         onChange={e => setDescription(e.target.value)}
-        className="w-full rounded-md border px-3 py-2"
-      />
+        color={errors.amount ? "failure": "gray"}
+        />
 
       {errors.description && (
         <p className="text-sm text-red-500">{errors.description}</p>
       )}
 
-      <input
+      <TextInput
         type="number"
         placeholder="Monto"
         value={amount}
         onChange={e => setAmount(Number(e.target.value))}
-        className="w-full rounded-md border px-3 py-2"
-      />
+        color={errors.amount ? "failure": "gray"}
+        />
 
       {errors.amount && (
-        <p className="text-sm text-red-500">{errors.amount}</p>
+
+       <p className="text-sm text-red-500">{errors.amount}</p>
       )}
 
-      <select
+      <Select 
         value={type}
         onChange={e => setType(e.target.value as TransactionType)}
-        className="w-full rounded-md border px-3 py-2"
-      >
+        className='bg-slate-900 text-white border-slate-700'>
+
         <option value="income">Ingreso</option>
         <option value="expense">Gasto</option>
-      </select>
+      </Select>
 
       <button
         type="submit"

@@ -7,3 +7,5 @@ export interface Transaction {
   type: TransactionType
   date: string
 }
+
+export type NewTransaction = Omit<Transaction, "id">
