@@ -9,9 +9,13 @@ const TransactionList = () => {
   const [filter, setFilter] = useState<FilterType>("all");
 
   const filteredTransactions = useMemo(() => {
-    if (filter === "all") return transactions;
-    return transactions.filter((t) => t.type === filter);
-  }, [transactions, filter]);
+  const base = filter === "all" 
+    ? transactions 
+    : transactions.filter((t) => t.type === filter);
+    
+  // ORDENAR: La fecha más reciente primero
+  return [...base].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}, [transactions, filter]);
 
   if (transactions.length === 0) {
     return (
