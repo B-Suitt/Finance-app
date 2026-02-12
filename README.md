@@ -42,6 +42,6 @@ Sigue estos pasos para ejecutar el proyecto localmente:
    npm run dev
 
 4. **Abrir Navegador**
-   * *Visita http://localhost:5173* *
+   *Visita http://localhost:5173* 
    
    
