@@ -1,5 +1,6 @@
 import { type ReactNode } from 'react';
 import Header from './Header'; // Asegúrate de tener este componente o créalo abajo
+import Footer from './Footer';
 
 interface LayoutProps {
   children: ReactNode;
@@ -16,6 +17,7 @@ const Layout = ({ children }: LayoutProps) => {
         {/* Aquí se renderiza el Dashboard */}
         {children}
       </main>
+      <Footer />
     </div>
   );
 };
