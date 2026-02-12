@@ -2,7 +2,6 @@
 
 FinanceApp es una aplicación web moderna diseñada para el seguimiento y gestión de ingresos y gastos personales. Construida con un enfoque en el rendimiento, la escalabilidad y una interfaz de usuario "limpia", esta herramienta permite a los usuarios visualizar su salud financiera en tiempo real.
 
-![Licencia](https://img.shields.io/badge/license-MIT-blue.svg)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
