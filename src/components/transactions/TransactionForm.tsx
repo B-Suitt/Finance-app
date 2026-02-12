@@ -49,7 +49,7 @@ const TransactionForm = () => {
         <label className={labelClass}>Descripción</label>
         <input
           type="text"
-          placeholder="Ej: Alquiler"
+          placeholder="Ej: Arriendo"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           className={errors.description ? errorInputClass : inputClass}
