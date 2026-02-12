@@ -1,73 +1,35 @@
-# React + TypeScript + Vite
+# 💰 FinanceApp - Dashboard de Finanzas Personales
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FinanceApp es una aplicación web moderna diseñada para el seguimiento y gestión de ingresos y gastos personales. Construida con un enfoque en el rendimiento, la escalabilidad y una interfaz de usuario "limpia", esta herramienta permite a los usuarios visualizar su salud financiera en tiempo real.
 
-Currently, two official plugins are available:
+![Licencia](https://img.shields.io/badge/license-MIT-blue.svg)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Características Principales
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Gestión de Transacciones:** Registro intuitivo de ingresos y gastos con validación de datos.
+- **Visualización de Datos:** Gráficos dinámicos utilizando **Recharts** para comparar el balance general.
+- **Persistencia Local:** Los datos se almacenan en el `localStorage` del navegador para que no pierdas tu información al recargar.
+- **Diseño (Responsive):** Interfaz fluida adaptada a dispositivos móviles y escritorio utilizando Tailwind CSS nativo.
+- **Filtros Avanzados:** Clasificación de movimientos por tipo (Ingresos/Gastos) para un análisis detallado.
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologías Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Core:** React + TypeScript.
+- **Estado Global:** React Context API (Gestión centralizada de transacciones).
+- **Estilos:** Tailwind CSS (Sin librerías de componentes externas para control total del diseño).
+- **Gráficos:** Recharts.
+- **Herramientas de Construcción:** Vite.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Instalación y Configuración
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Sigue estos pasos para ejecutar el proyecto localmente:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/tu-usuario/finance-app.git](https://github.com/tu-usuario/finance-app.git)
+   cd finance-app
