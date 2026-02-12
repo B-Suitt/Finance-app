@@ -1,6 +1,6 @@
 import Layout from "./components/layout/Layout"
-import FinanceProvider from "./context/FinanceProvider";
-import Dashboard from './pages/Dashboard';
+import { FinanceProvider } from './context/FinanceContext'
+import Dashboard from './pages/DashboardPage';
 
 
 

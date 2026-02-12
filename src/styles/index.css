@@ -1,18 +1,11 @@
 @import "tailwindcss";
-@import "flowbite-react/plugin/tailwindcss";
-@source "../../.flowbite-react/class-list.json";
-@plugin "flowbite/plugin";
-@source "../node_modules/flowbite";
 
-
-/* Quitar flechas en Chrome, Edge, Safari */
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
+/*Estilos personalizados para inputs numéricos */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-/* Quitar flechas en Firefox */
-input[type='number'] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
