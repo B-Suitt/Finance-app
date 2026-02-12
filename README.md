@@ -14,7 +14,7 @@ FinanceApp es una aplicación web moderna diseñada para el seguimiento y gesti�
 - **Visualización de Datos:** Gráficos dinámicos utilizando **Recharts** para comparar el balance general.
 - **Persistencia Local:** Los datos se almacenan en el `localStorage` del navegador para que no pierdas tu información al recargar.
 - **Diseño (Responsive):** Interfaz fluida adaptada a dispositivos móviles y escritorio utilizando Tailwind CSS nativo.
-- **Filtros Avanzados:** Clasificación de movimientos por tipo (Ingresos/Gastos) para un análisis detallado.
+- **Filtros:** Clasificación de movimientos por tipo (Ingresos/Gastos) para un análisis detallado.
 
 ## 🚀 Tecnologías Utilizadas
 
