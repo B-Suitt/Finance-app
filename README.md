@@ -32,3 +32,16 @@ Sigue estos pasos para ejecutar el proyecto localmente:
    ```bash
    git clone [https://github.com/tu-usuario/finance-app.git](https://github.com/tu-usuario/finance-app.git)
    cd finance-app
+
+2. **Instalar Dependencias**
+   ```bash
+   npm install
+
+3. **Iniciar el servidor de desarrollo**
+   ```bash
+   npm run dev
+
+4.**Abrir Navegador**
+   Visita http://localhost:5173
+   
+   
