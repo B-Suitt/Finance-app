@@ -41,7 +41,7 @@ Sigue estos pasos para ejecutar el proyecto localmente:
    ```bash
    npm run dev
 
-4. **Abrir Navegador**
-   * *Visita http://localhost:5173* 
+## Pagina en Vercel
+https://app-finanzas-suitt.vercel.app/
    
    
